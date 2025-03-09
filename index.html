@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div class="heading">
+            <div class="name">
+                <p>Benjamin Allison</p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="left">
+                <button class="card" onclick="openContent(event, 'about')">About Me</button>
+                <button class="card" onclick="openContent(event, 'projects')">Projects</button>
+                <button class="card" onclick="openContent(event, 'skills')">Skills</button>
+                <button class="card" onclick="openContent(event, 'education')">Education</button>
+                <button class="card" onclick="openContent(event, 'contact')">Contact</button>
+            </div>
+            <div class="right">
+                <div id="default">
+                    <h2>Welcome to my Portfolio</h2>
+                    <p>Click a section to learn more about me</p>
+                </div>
+                <div id="about" class="card-content">
+                <h>About Me</h>
+                <p>
+                    Hi, I’m Benjamin Allison, a computer science student with an associate degree in CS and a passion for using data to make a meaningful impact. I’m eager to explore opportunities in software development, data analytics, and backend engineering, where I can leverage my technical skills to solve real-world problems.
+                </p>
+                <h>My Work & Mission</h>
+                <p>
+                    Throughout my career, I’ve been driven by a desire to give back to the community through technology and problem-solving:
+                </p>    
+                <ul>
+                    <li>Data for Social Good – At Cool Culture, I helped track down missing funds to ensure low-income families continued to have access to art.</li>
+                    <li>Financial Management for Nonprofits – I worked with a nonprofit dedicated to helping displaced and abused women by ensuring their funds were managed effectively.</li>
+                    <li>Education & Mentorship – For the past three years, I’ve been a substitute teacher, fostering a love of learning in children and shaping the next generation.</li>
+                </ul>
+                
+                </div>
+                <div id="education" class="card-content">
+                    <h>Education</h>
+                    <p>Bachelor of Science in Computer Science (Expected April 2025) | University of the People | GPA: 3.3+</p>
+                    <p>Associate of Science in Computer Science (2024) | University of the People | GPA: 3.8</p>
+                    <p>Certificate in Network and Application Security (2024) | University of the People</p>
+                    <h>Relevant Coursework</h>
+                    <ul>
+                        <p>Web Development, Software Development </p>
+                        <p>Data & Algorithms, Big Data, Information Retrieval</p>
+                        <p>Operating Systems, Mobile App Development</p>
+                        <p>Application Security, Databases</p>
+                    </ul>
+                </div>
+                <div id="projects" class="card-content"> <div id="carousel" class="carousel">
+                    <button class="carousel-prev" onclick="moveSlide(-1)">&#10094;</button>
+                    <div class="carousel-slides">
+                        <div class="carousel-slide project1">
+                            <h1><a target="_blank" style=" color: inherit" href='https://genreinsights.vercel.app'>Steam Genre Insight</a></h1>
+                            <p>The Steam Genre Distribution Site is a web application that analyzes a user's Steam library to provide insights into their game genre distribution, spending habits, and playtime allocation. The site also calculates genre diversity using Simpson's Diversity Index to help users understand their purchasing patterns.</p>
+                            <h1>Key Features</h1>
+                            <p>Retrieves a user's Steam library information via Steam's API</p>
+                            <p>Calculates and visualizes genre distribution as a chart</p>
+                            <p>Calculates Simpson's diversity index for genre variety assessment</p>
+                            <h>Technologies</h>
+                            <p>Python</p>
+                            <p>Flask</p>
+                            <p>PostgreSQL</p>
+                            <p>HTML</p>
+                            <p>CSS</p>
+                            <p>JavaScript</p>
+                            <p>Steam API</p>
+                        </div>
+                        <div class="carousel-slide">
+                            <h><a target="_blank" style=" color: inherit" href='https://github.com/BenjaminAllison11/indexer'>Corpora Indexer</a></h>
+                            <p>This project is a search engine that indexes a corpus of text documents. The indexer can be used to search for words in the corpus, and it will return a list of documents that contain the word, as well as the number of times the word appears in each document. The indexer also saves this information in a SQLite database.</p>
+                            <h>Technologies</h>
+                            <p>Python</p>
+                            <p>SQLite</p>
+                        </div>
+                        <div class="carousel-slide">
+                            <h><a target="_blank" style=" color: inherit" href='https://github.com/BenjaminAllison11/Graph-Coloring-Algorithm-Implementation'>Graph Coloring Algorithm Implementation</a></h>
+                            <p>This project implements a graph coloring algorithm in Python, designed to solve the classic graph coloring problem. The algorithm determines the minimum number of colors required to color the vertices of a graph such that no two adjacent vertices share the same color. This implementation utilizes a backtracking approach to explore possible color assignments and efficiently find a valid solution.</p>
+                            <h>Key Features</h>
+                            <p>The graph is represented using an adjacency matrix, allowing for flexible representation of various graph structures.</p>
+                            <p>Implements a recursive backtracking algorithm to explore different color combinations.</p>
+                            <p>Includes a "safe" function to check if a color assignment is valid.</p>
+                            <h>Technologies</h>
+                            <p>Python</p>
+                        </div>
+                    </div>
+                    <button class="carousel-next" onclick="moveSlide(1)">&#10095;</button>
+                </div></div>
+                <div id="skills" class="card-content"><h2>Skills</h2>
+                    <ul>
+                      <p><strong>Programming Languages:</strong> Python, JavaScript, Java</p>
+                      <p><strong>Frontend:</strong> React, HTML, CSS, Tailwind CSS, Bootstrap</p>
+                      <p><strong>Backend:</strong> Node.js, Express.js, Flask</p>
+                      <p><strong>Database:</strong> PostgreSQL, MySQL</p>
+                    </ul></div>
+                <div id="contact" class="card-content"><a style=" color: inherit" href="mailto:email@example.com">Email: benjjallison@gmail.com</a>
+                    <a style=" color: inherit" href="https://github.com/BenjaminAllison11">GitHub</a>
+                    <a style=" color: inherit" href="https://www.linkedin.com/in/benjamin-allison-22947a272/">LinkedIn</a>
+                    <a style=" color: inherit" href="Resume2_25.pdf">Resume</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
