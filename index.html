@@ -749,55 +749,67 @@ footer{
       </div>
     </div>
 
-    <!-- WYoming -->
-    <div class="project-card featured reveal">
-      <div class="project-bar bar-indigo"></div>
-      <div class="featured-grid">
-        <div class="featured-left">
-          <div class="project-type">Data Analytics · Data Visualization</div>
-          <div class="project-name">DTSC-600 Breaking into Wyoming <em>A Tableau Sales Analytics Project</em></div>
-          <p class="project-desc">
-            <em>The Problem</em><br>
-A fictitious U.S. regional retailer had no presence in Wyoming. My task was to act as an internal analyst and build a data-driven case for whether and how the company should enter that market — from identifying the right product category to recommending which salespeople to deploy.<br>
-<em>The Data</em><br>
-I worked with a multi-table Excel dataset (Regional Sales) containing nearly 8,000 sales orders, joined across four sheets: Sales Orders, Store Locations, Sales Team, and Product Categories. I connected these in Tableau via left joins and built a packaged extract (.twbx) for a stable, reproducible workbook.<br>
-<em>Technical Elements</em><br>
-The workbook includes bar, line, area, stacked bar, bullet, treemap, pie, histogram, box-and-whisker, scatterplot, map, and dual-axis chart types. I used calculated fields for metrics like Profit Per Person, Running Profits, Profit Markup Percent, and Above Average Flag; LOD expressions for state-level profit aggregations; and table calculations for rankings and running totals. Three parameters enabled dashboard interactivity, and filters allowed users to drill into specific states, categories, and sales channels.
-
-          </p>
+   <!-- Wyoming -->
+<div class="project-card featured reveal">
+  <div class="project-bar bar-indigo"></div>
+  <div class="featured-grid">
+    <div class="featured-left">
+      <div class="project-type">Data Analytics · Information Visualization</div>
+      <div class="project-name">Breaking into Wyoming</div>
+      <p class="project-desc">
+        Acting as an internal analyst for a fictitious U.S. regional retailer, I built a data-driven market entry case for Wyoming — the company's only state with zero stores. Starting from ~8,000 sales orders joined across four tables (Sales Orders, Store Locations, Sales Team, Product Categories), I worked through a structured investigative arc: confirm the business case for physical presence, scope the neighboring market, identify the right product category, and recommend a sales team.
+      </p>
+      <div style="margin-top:14px;display:flex;flex-direction:column;gap:7px">
+        <div style="font-size:0.63rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted2);margin-bottom:2px">Technical elements</div>
+        <div style="font-size:0.76rem;color:var(--muted);line-height:1.6">
+          17 worksheets · 2 dashboards · 12+ chart types including dual-axis, bullet, treemap, box-and-whisker, scatterplot, and map
         </div>
-        <div class="featured-right">
-          <div class="project-type"></div>
-          <div class="project-name"><em>The Analysis</em></div>
-          <p class="project-desc">
-            The story I built follows a deliberate investigative arc:
-
-Why Wyoming? With zero current stores there, I first confirmed that in-store sales channels generate nearly $4M more in profit than online, making a physical location worth pursuing.
-Scoping the neighbors. I filtered the dataset to Wyoming's six bordering states and confirmed consistent year-over-year profit growth in the region.
-Category selection. Using a dynamic Top N parameter, I identified Photo Tech, Pool Accessories, and Tech Accessories as the top three profit categories across neighboring states. After flagging South Dakota and Idaho as declining markets and removing them from the candidate pool, Tech Accessories and Outdoor Furniture emerged as the strongest options.
-Profit per capita vs. total profit. A scatterplot comparing profit-per-capita against total profit revealed that Tech Accessories maintains strong demand even in low-population markets — a key signal for Wyoming's sparse demographics.<br>
-<em>The recommendation</em> <br>
-Tech Accessories was identified as the primary category, with Jenny Hawkins and Carl Nguyen recommended as the initial sales team based on their per-order profit performance in that category.<br>
-
-          </p>
+        <div style="font-size:0.76rem;color:var(--muted);line-height:1.6">
+          Calculated fields: Profit Per Person, Running Profits, Profit Markup Percent, Above Average Flag — plus LOD expressions for state-level aggregations and table calculations for rankings
         </div>
-      </div>
-      <div class="featured-bottom">
-        <div class="project-stack">
-          <span class="stack-tag">Tableau</span>
-          <span class="stack-tag">Excel</span>
-          <span class="stack-tag">KPI dashboard design</span>
-          <span class="stack-tag">Exploratory data analysis </span>
-
-        </div>
-        <div style="display:flex;align-items:center;gap:12px;flex-shrink:0">
-          <span class="project-status status-request">Code on request</span>
-          <span style="font-size:0.73rem;color:var(--muted2)">Academic work</span>
+        <div style="font-size:0.76rem;color:var(--muted);line-height:1.6">
+          3 parameters (Top N, Profit Markup, Order Profit) driving dynamic dashboard interactivity
         </div>
       </div>
     </div>
-
-
+    <div class="featured-right">
+      <div class="project-type">Key findings</div>
+      <div class="project-name">The Analysis</div>
+      <div style="display:flex;flex-direction:column;gap:10px;margin-top:4px">
+        <div style="font-size:0.8rem;color:var(--muted);line-height:1.65;padding-left:12px;border-left:2px solid var(--parchment)">
+          <strong style="color:var(--ink2);display:block;margin-bottom:2px">In-store vs. online</strong>
+          Physical locations generate nearly $4M more in profit than online — establishing the case for a Wyoming store.
+        </div>
+        <div style="font-size:0.8rem;color:var(--muted);line-height:1.65;padding-left:12px;border-left:2px solid var(--parchment)">
+          <strong style="color:var(--ink2);display:block;margin-bottom:2px">Regional health</strong>
+          Wyoming's six bordering states showed consistent year-over-year profit growth, confirming a viable regional market.
+        </div>
+        <div style="font-size:0.8rem;color:var(--muted);line-height:1.65;padding-left:12px;border-left:2px solid var(--parchment)">
+          <strong style="color:var(--ink2);display:block;margin-bottom:2px">Category selection</strong>
+          After removing South Dakota and Idaho as declining markets, Tech Accessories emerged as the strongest category — maintaining high profit-per-capita even in low-population states, a critical signal for Wyoming's demographics.
+        </div>
+        <div style="font-size:0.8rem;color:var(--muted);line-height:1.65;padding-left:12px;border-left:2px solid var(--parchment)">
+          <strong style="color:var(--ink2);display:block;margin-bottom:2px">Recommendation</strong>
+          Launch Tech Accessories in Wyoming with Jenny Hawkins and Carl Nguyen as the initial sales team, selected for their per-order profit performance in that category.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="featured-bottom">
+    <div class="project-stack">
+      <span class="stack-tag">Tableau</span>
+      <span class="stack-tag">Excel</span>
+      <span class="stack-tag">LOD Expressions</span>
+      <span class="stack-tag">Calculated Fields</span>
+      <span class="stack-tag">KPI Dashboard</span>
+      <span class="stack-tag">Exploratory Analysis</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:12px;flex-shrink:0">
+      <span class="project-status status-request">Available on Request</span>
+      <span style="font-size:0.73rem;color:var(--muted2)">Academic work</span>
+    </div>
+  </div>
+</div>
     <!-- StateMatch -->
     <div class="project-card reveal">
       <div class="project-bar bar-teal"></div>
